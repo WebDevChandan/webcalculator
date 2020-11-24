@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<form class="calculator" name="calc">
+		<input type="text" class="value" name="text" readonly=""/>
+		<span class="num clear" onclick="document.calc.text.value=''">c</span>
+		<span class="num" onclick="back()"> &#x2190;</span>
+		<span class="num" onclick="document.calc.text.value +='/'">/</span>
+		<span class="num" onclick="document.calc.text.value +='*'">*</span>
+		<span class="num" onclick="document.calc.text.value +='7'">7</span>
+		<span class="num" onclick="document.calc.text.value +='8'">8</span>
+		<span class="num" onclick="document.calc.text.value +='9'">9</span>
+		<span class="num" onclick="document.calc.text.value +='-'">-</span>
+		<span class="num" onclick="document.calc.text.value +='4'">4</span>
+		<span class="num" onclick="document.calc.text.value +='5'">5</span>
+		<span class="num" onclick="document.calc.text.value +='6'">6</span>
+		<span class="num plus" onclick="document.calc.text.value +='+'">+</span>
+		<span class="num" onclick="document.calc.text.value +='3'">3</span>
+		<span class="num" onclick="document.calc.text.value +='2'">2</span>
+		<span class="num" onclick="document.calc.text.value +='1'">1</span>
+		<span class="num" onclick="document.calc.text.value +='0'">0</span>
+		<span class="num" onclick="document.calc.text.value +='.'">.</span>
+		<span class="num" onclick="document.calc.text.value +='%'">%</span>
+		<span class="num equal" onclick="document.calc.text.value =eval(calc.text.value)">=</span>
+	</form>
+	
+	<script>
+		function back(){
+	var exp=document.calc.text.value;
+	document.calc.text.value=exp.substring(0,exp.length-1);
+}
+	</script>
+</body>
+</html>

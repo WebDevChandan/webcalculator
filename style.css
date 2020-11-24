@@ -1,0 +1,80 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #091921;
+}
+.calculator{
+	padding: 45px;
+	position: relative;
+	display: grid;
+	box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+				inset 0 -15px 15px rgba(255,255,255,0.05),
+				0 15px 15px rgba(0,0,0,0.7),
+				inset 0 15px 15px rgba(0,0,0,0.4);
+	border: 15px solid #091921;
+}
+
+.calculator .value{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 25px;
+	font-size: 18px;
+	border: 2px solid #091921;
+	box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+				inset 0 -15px 15px rgba(255,255,255,0.05),
+				0 15px 15px rgba(0,0,0,0.7),
+				inset 0 15px 15px rgba(0,0,0,0.4);
+}
+
+.calculator span{
+	margin: 10px;
+	display: grid;
+	width: 60px;
+	height: 60px;
+	color: white;
+	background: #0c2835;
+	place-items: center;
+	border: 1px solid #091921;
+	box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+				inset 0 -15px 15px rgba(255,255,255,0.05),
+				0 15px 15px rgba(0,0,0,0.7),
+				inset 0 15px 15px rgba(0,0,0,0.4);
+    cursor: pointer;
+    user-select: none;
+}
+
+.calculator span:active{
+	border: none;
+	box-shadow: 0 -65px 65px rgba(255,255,255,0.05),
+				inset 0 -15px 15px rgba(255,255,255,0.03),
+				0 65px 65px rgba(255,255,255,0.05),
+				inset 0 15px 15px rgba(0,0,0,0.7);
+
+}
+
+.calculator span.clear{
+	/*grid-column: span 2;*/
+	/*width: 138px;*/
+	background: #ff3077;
+}
+
+.calculator span.plus{
+	grid-row: span 2;
+	height: 138px;
+}
+
+.calculator span.equal{
+	background: #03b1ff;
+}
