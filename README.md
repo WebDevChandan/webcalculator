@@ -1,5 +1,6 @@
 # webcalculator
-  Project Name : Glassmorphism WebCalculator       
+
+  Project Name : Neumorphism WebCalculator       
   Creator : WebDevChandan 		                     
   Site : webdevchandan.hawkviewer.com              
   License : Creative Commons Attribution License   
